@@ -1,0 +1,15 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.secure=1
+security.perf_harden=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Fri Sep 21 19:05:38 CST 2018
+ro.bootimage.build.date.utc=1537527938
+ro.bootimage.build.fingerprint=ZTE/GEN_CN_P845A02/P845A02:8.1.0/OPM1.171019.026/20180921.190538:user/release-keys
+persist.sys.usb.config=none

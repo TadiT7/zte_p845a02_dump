@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<document>
+<!--<versiontype name="0x30">
+     <package name="" />
+</versiontype>-->
+
+  <versiontype name="0x31">
+     <package name="com.android.selfregistsmsservice" />
+     <package name="com.android.deftdeviceregister" />
+  </versiontype>
+
+  <versiontype name="0x32">
+     <package name="com.mobiletools.systemhelper" />
+     <package name="com.zte.helper" />
+  </versiontype>
+    <versiontype name="0x33">
+     <package name="com.mobiletools.systemhelper" />
+     <package name="com.zte.helper" />
+	 <package name="com.android.selfregistsmsservice" />
+     <package name="com.android.deftdeviceregister" />
+  </versiontype>
+</document>

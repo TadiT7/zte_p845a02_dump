@@ -1,0 +1,38 @@
+on boot
+    ## added for fpc fingerprint
+    chmod 0600 /sys/bus/platform/devices/soc:fpc1020/irq
+    chown system system /sys/bus/platform/devices/soc:fpc1020/irq
+    chmod 0200 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+    chown system system /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+
+service fpc1028_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc1028
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input
+    disabled
+
+
+#on property:ro.hardware.fingerprint=fpc1028
+#    start fpc1028_hal
+
+#synaFpTest for Emode test
+service fpcFpTest /system/bin/fpc_fingerprint_test
+    class late_start
+    user root
+    group system
+    oneshot
+    disabled
+
+on property:debug.synafp.test-start=1 && property:ro.hardware.fingerprint=fpc1028
+    stop fpc1028_hal
+    start fpcFpTest
+
+on property:debug.synafp.test-start=0 && property:ro.hardware.fingerprint=fpc1028
+    stop fpcFpTest
+    start fpc1028_hal
+
+on property:ro.hardware.fingerprint=fpc1028
+    start fpc1028_hal

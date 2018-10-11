@@ -1,0 +1,5 @@
+service vendorad /vendor/bin/hw/vendor.zte.covolution.assertdisplay.vendorad@1.0-service
+    class hal
+    user system
+    group system
+

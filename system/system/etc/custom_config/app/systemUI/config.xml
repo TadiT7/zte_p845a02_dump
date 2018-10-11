@@ -1,0 +1,17 @@
+<resources>
+    <boolean name="STYLE">5</boolean>
+    <boolean name="NOTCH">true</boolean>
+    <integer name="NOTCH_FUNCTION">3650</integer>
+    <integer name="NOTCH_SUB_FUNCTION">12009</integer>
+    <integer name="PanelExpandCtrl">70</integer>
+    <integer name="CORNOR_SIZE">48</integer>
+    <boolean name="COMBINED_SIGNAL">true</boolean>
+    <boolean name="DONT_SHOW_DISABLED_CARD">true</boolean>
+    <string name="QUICK_SETTING_ITEMS_MFV">wifi,sim0,sound,location,bt,sim1,airplane,hotspot,iris,flashlight,videoscreen,screenshot,rotation,night,nfc,keyGuard,powersave,pop,dnd,dolby,superpower,sync,cast</string>
+    <boolean name="PC_MODE">true</boolean>
+    <integer name="DataRoamingCtrl_MFV">144</integer>
+    <integer name="STATUS_BAR_TEXT_SIZE_OVERRIDE">30</integer>
+    <boolean name="COMBINE_HD_DATATYPE">true</boolean>
+    <boolean name="FACE_DETECTION_OPT">true</boolean>
+    <integer name="FACE_DETECTION_OPT_TIME">800</integer>
+</resources>

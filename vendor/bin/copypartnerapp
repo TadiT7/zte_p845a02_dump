@@ -1,0 +1,30 @@
+#!/vendor/bin/sh
+
+FILENAME=/data/system/entropy.dat
+FILENAME1=/persist/fotaflag.txt
+FILENAME2=/vendor/bin/toybox_vendor
+
+if [ -f $FILENAME ]; then
+    if [ -f $FILENAME1 ]; then
+        if [ -f $FILENAME2 ]; then
+           /vendor/bin/toybox_vendor ln -sf /system/partner-app/*  /data/app/
+        else
+           ln -s /system/partner-app/*  /data/app/
+        fi
+        cat /data/app/.delpartnerapp | while read line
+        do
+           rm $line
+           echo "$line is deleted app"
+        done
+        rm $FILENAME1
+    else
+       echo "File exists, not the first"
+    fi
+else
+    echo "ZSW the first, ln to data/app "
+    if [ -f $FILENAME2 ]; then
+       /vendor/bin/toybox_vendor ln -sf /system/partner-app/*  /data/app/
+    else
+       ln -s /system/partner-app/*  /data/app/
+    fi
+fi

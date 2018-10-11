@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings version="6">
+
+    <secure key = "lock_screen_lock_after_timeout"
+        value = "0"
+    />
+
+    <secure key = "doze_enabled"
+        value = "0"
+    />
+
+    <secure key="camera_double_tap_power_gesture_disabled"
+        value="1"
+    />
+	
+</settings>

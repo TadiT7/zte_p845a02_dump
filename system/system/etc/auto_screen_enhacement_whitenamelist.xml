@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<document>
+    <mode name="camera">
+        <package name="com.zte.camera" />
+    </mode>
+    <mode name="photo">
+    </mode>
+    <mode name="cinema">
+        <!-- <package name="com.zte.videoplayer" />-->
+        <!-- <package name="com.zte.screenenhancement" />-->
+    </mode>
+    <mode name="game">
+        <package name="com.tencent.tmgp.com.cocos2d.fishingfunqq" />
+        <package name="com.vectorunit.Jl_yj" />
+        <package name="com.vectorunit.redcmgeplaycn.anzhi" />
+    </mode>
+    <mode name="reader">
+    </mode>
+    <!--<mode name="standard">
+        <package name="" />
+    </mode>-->
+</document>
